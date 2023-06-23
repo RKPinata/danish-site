@@ -134,7 +134,8 @@
 }
 
 .menu-toggle > .menu-toggle-label > .word {
-  font-family: 'Audiowide', cursive;
+  font-family: 'Space__Grotesk', sans-serif;
+  font-weight: bold;
   font-size: 1.5em;
   transition: opacity 250ms, transform 250ms;
 }

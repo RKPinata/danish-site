@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 import styles from "./Menu.module.css";
 
@@ -7,7 +8,6 @@ import MenuToggleButton from "./MenuToggleButton";
 import MenuArcs from "./MenuArcs";
 import MenuBackground from "./MenuBackground";
 import MenuLinks from "./MenuLinks";
-import Link from "next/link";
 import MenuSocials from "./MenuSocials";
 
 function Menu() {
@@ -15,8 +15,8 @@ function Menu() {
   const router = useRouter();
 
   const toggleMenuHandler = () => {
-    setMenuToggled(!menuToggled)
-  }
+    setMenuToggled(!menuToggled);
+  };
 
   /* useEffect(() => {
     if (router.asPath === "/") {
@@ -27,22 +27,29 @@ function Menu() {
   },[router.asPath]) */
 
   useEffect(() => {
-      setTimeout(setMenuToggled(true), 200)
-  },[])
+    setTimeout(setMenuToggled(true), 200);
+  }, []);
 
   useEffect(() => {
     toggleMenuHandler();
-},[router.asPath])
+  }, [router.asPath]);
 
   return (
-    <div className={`${styles['menu-container']} ${menuToggled ? styles['menu-toggled'] : ''}`}>
+    <div
+      className={`${styles["menu-container"]} ${
+        menuToggled ? styles["menu-toggled"] : ""
+      }`}
+    >
       <div className={styles.menu}>
-        <MenuToggleButton onClick={toggleMenuHandler} type="button" isToggled={menuToggled}/>
-        <MenuBackground isToggled={menuToggled}/>
-        <MenuArcs isToggled={menuToggled}/>
-        <MenuLinks isToggled={menuToggled} onToggleMenu={toggleMenuHandler}/>
+        <MenuToggleButton
+          onClick={toggleMenuHandler}
+          type="button"
+          isToggled={menuToggled}
+        />
+        <MenuBackground isToggled={menuToggled} />
+        <MenuArcs isToggled={menuToggled} />
+        <MenuLinks isToggled={menuToggled} onToggleMenu={toggleMenuHandler} />
         {/* <MenuSocials isToggled={menuToggled}/> */}
-
       </div>
     </div>
   );

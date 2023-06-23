@@ -1,7 +1,6 @@
 import React from "react";
 
-import styles from "../styles/index.module.css";
-import Menu from "@/components/Menu/Menu";
+import styles from "./index.module.css"
 
 import Link from "next/link";
 
@@ -9,6 +8,7 @@ function HomePage() {
   return (
     <>
       <div>
+        asdfasd
       </div>
     </>
   );

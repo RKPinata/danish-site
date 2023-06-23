@@ -1,0 +1,44 @@
+.menu-container {
+  background-color: var(--background-light);
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  transition: background-color 600ms;
+}
+
+.menu {
+  height: 100vh;
+  left: 0px;
+  overflow: hidden;
+  pointer-events: none; 
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 100;
+}
+
+.menu-toggled {
+  background-color: var(--background-dark);
+}
+
+.menu-toggled > .menu {
+  pointer-events: all; 
+}
+
+.menu-toggled > .menu > .menu-links > .link {  
+  opacity: 1;
+  transform: none;
+  transition: opacity 600ms ease-in;  
+}
+
+.menu-toggled > .menu > .menu-links > .link:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+.menu-toggled > .menu > .menu-links > .link:nth-of-type(3) {
+  transition-delay: 150ms;
+}
+
+.menu-toggled > .menu > .menu-links > .link:nth-of-type(4) {
+  transition-delay: 200ms;
+}

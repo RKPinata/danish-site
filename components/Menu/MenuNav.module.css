@@ -1,0 +1,162 @@
+.link-container.is-toggled > .link {
+  opacity: 1;
+  transform: none;
+  transition: opacity 600ms ease-in;
+}
+
+.link-container.is-toggled > .link:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+.link-container.is-toggled > .link:nth-of-type(3) {
+  transition-delay: 150ms;
+}
+
+.link-container.is-toggled > .link:nth-of-type(4) {
+  transition-delay: 200ms;
+}
+
+.link-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  gap: 30px;
+  justify-content: center; 
+  inset: 0;
+  position:absolute;
+}
+
+
+.link-container > .link {
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  gap: 10px;
+  opacity: 0;
+  position: relative;
+  text-decoration: none;
+  transition: opacity 250ms ease-in;
+  width: 200px;
+}
+
+.link-container > .link:hover > .label {
+  transform: translate3d(6%, 0px, 0px);
+}
+
+.link-container > .link:hover > .index {
+  transform: translate3d(20%, 0px, 0px);
+}
+
+.link-container > .link:hover > .anchor:before {
+  opacity: 0.15;
+  transform: translate3d(-50%, -50%, 0px) scale(1.5);
+}
+
+.link-container > .link:hover > .anchor:after {
+  border-color: red;
+  transform: translate3d(-50%, -50%, 0px) scale(1.1);
+}
+
+.link-container > .link > .anchor {
+  background-color: white;
+  height: clamp(4px, 0.4vmax, 12px);
+  left: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-500%, -100%, 0px) rotate(45deg);
+  transition: transform 250ms;
+  width: clamp(4px, 0.4vmax, 12px);
+}
+
+.link-container > .link > .anchor:before,
+.link-container > .link > .anchor:after {
+  content: "";
+  height: 300%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  transition: transform 250ms, border-color 250ms;
+  width: 300%;
+}
+
+.link-container > .link > .anchor:before {
+  border: 1px solid red;
+  opacity: 0;
+}
+
+.link-container > .link > .anchor:after {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.link-container > .link > .index {
+  color: rgb(255, 255, 255, 0.25);
+  font-size: 0.8em;
+  transition: transform 250ms;
+}
+
+.link-container > .link > .label {
+  color: white;
+  font-size: 2em;
+  transition: transform 250ms;
+}
+
+@media (min-width: 1000px) and (max-width: 2699px) {
+  .link-container.is-toggled > .link {
+    transition: transform 400ms cubic-bezier(0.16, 0.68, 0.25, 0.83),
+      opacity 500ms cubic-bezier(0.87, 0.12, 0.92, 0.39);
+  }
+
+  .link-container > .link {
+    position: absolute;
+    transform: translate3d(300%, 800%, 0px) scale(1.25);
+    transition: transform 500ms cubic-bezier(0.62, 0.16, 0.86, 0.45),
+      opacity 400ms cubic-bezier(0.16, 0.68, 0.25, 0.83);
+  }
+
+  .link-container > .link > .anchor {
+    top: 0%;
+    transform: translate3d(-350%, -100%, 0px) rotate(45deg);
+  }
+
+  .link-container > .link:first-of-type {
+    left: 29.8vmax;
+    top: 22vmax;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 2099px) {
+  .link-container > .link:nth-of-type(2) {
+    left: 59.2vmax;
+    top: 16vmax;
+  }
+
+  .link-container > .link:nth-of-type(3) {
+    left: 44.5vmax;
+    top: 42vmax;
+  }
+
+  .link-container > .link:nth-of-type(4) {
+    left: 75.8vmax;
+    top: 39vmax;
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2699px) {
+  .link-container > .link:nth-of-type(2) {
+    left: 59.6vmax;
+    top: 14vmax;
+  }
+
+  .link-container > .link:nth-of-type(3) {
+    left: 51vmax;
+    top: 34vmax;
+  }
+
+  .link-container > .link:nth-of-type(4) {
+    left: 80.5vmax;
+    top: 28vmax;
+  }
+}

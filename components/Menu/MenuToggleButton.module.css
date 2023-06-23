@@ -1,0 +1,166 @@
+.menu-toggle {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 50px;
+  justify-content: center;
+  left: 30px;
+  padding: 0px;
+  pointer-events: all;
+  position: fixed;
+  top: 30px;
+  width: 50px;
+  z-index: 5;
+}
+
+/* 
+.menu-toggle:hover > span:nth-of-type(2),
+.menu-toggle:hover > span:nth-of-type(3){
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.menu-toggle > span {
+  background-color: var(--background-dark);
+  display: block;
+  height: 3px;
+  transition: transform 250ms;
+  width: 24px;
+}
+
+.menu-toggle > span:nth-of-type(2) {
+  transform: translate3d(5px, 0px, 0px);
+}
+
+.menu-toggle > span:nth-of-type(3) {
+  transform: translate3d(-2px, 0px, 0px);
+}
+
+.menu-toggle > .menu-toggle-label {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  gap: 5px;
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  transform: translate3d(100%, 0px, 0px);
+  white-space: nowrap;
+}
+
+.menu-toggle > .menu-toggle-label > .word {
+  font-family: 'Audiowide', cursive;
+  font-size: 1.5em;
+  transition: opacity 250ms, transform 250ms;
+}
+
+
+.menu-toggle.is-toggled > span:first-of-type {
+  transform: translate3d(0px, 8px, 0px) rotate(45deg);
+}
+
+.menu-toggle.is-toggled > span:nth-of-type(2) {
+  opacity: 0;
+  transform: translate3d(-5px, 0px, 0px);
+}
+
+.menu-toggle.is-toggled > span:nth-of-type(3) {
+  transform: translate3d(0px, -8px, 0px) rotate(-45deg);
+}
+
+.menu-toggle.is-toggled > .menu-toggle-label > .word {
+  opacity: 0;
+  transform: translate3d(-30%, 0px, 0px) skew(20deg) scaleX(1.2);  
+  transition: opacity 250ms cubic-bezier(.71, .19, .87, .33), 
+    transform 250ms cubic-bezier(.71, .19, .87, .33);
+}
+
+
+.menu-toggle.is-toggled > span:first-of-type {
+  transform: translate3d(0px, 8px, 0px) rotate(45deg);
+}
+
+.menu-toggle.is-toggled > span:nth-of-type(2) {
+  opacity: 0;
+  transform: translate3d(-5px, 0px, 0px);
+}
+
+.menu-toggle.is-toggled > span:nth-of-type(3) {
+  transform: translate3d(0px, -8px, 0px) rotate(-45deg);
+}
+
+.menu-toggle.is-toggled > .menu-toggle-label > .word {
+  opacity: 0;
+  transform: translate3d(-30%, 0px, 0px) skew(20deg) scaleX(1.2);  
+  transition: opacity 250ms cubic-bezier(.71, .19, .87, .33), 
+    transform 250ms cubic-bezier(.71, .19, .87, .33);
+} */
+
+
+.menu-toggle > span {
+  background-color: var(--background-dark);
+  display: block;
+  height: 3px;
+  transition: transform 250ms;
+  width: 24px;
+}
+ 
+ .menu-toggle > span:first-of-type {
+  transform: translate3d(0px, 8px, 0px) rotate(45deg);
+}
+
+.menu-toggle > span:nth-of-type(2) {
+  opacity: 0;
+  transform: translate3d(-5px, 0px, 0px);
+}
+
+.menu-toggle > span:nth-of-type(3) {
+  transform: translate3d(0px, -8px, 0px) rotate(-45deg);
+}
+
+.menu-toggle > .menu-toggle-label {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  gap: 5px;
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  transform: translate3d(100%, 0px, 0px);
+  white-space: nowrap;
+}
+
+.menu-toggle > .menu-toggle-label > .word {
+  font-family: 'Audiowide', cursive;
+  font-size: 1.5em;
+  transition: opacity 250ms, transform 250ms;
+}
+
+.menu-toggle.is-toggled:hover > span:nth-of-type(2),
+.menu-toggle.is-toggled:hover > span:nth-of-type(3){
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+.menu-toggle.is-toggled > span:first-of-type {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.menu-toggle.is-toggled > span:nth-of-type(2) {
+  opacity: 1;
+  transform: translate3d(5px, 0px, 0px);
+}
+
+.menu-toggle.is-toggled > span:nth-of-type(3) {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.menu-toggle.is-toggled > .menu-toggle-label > .word {
+  opacity: 0;
+  transform: translate3d(-30%, 0px, 0px) skew(20deg) scaleX(1.2);  
+  transition: opacity 250ms cubic-bezier(.71, .19, .87, .33), 
+    transform 250ms cubic-bezier(.71, .19, .87, .33);
+}

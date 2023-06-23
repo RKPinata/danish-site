@@ -1,0 +1,76 @@
+
+/* #menu-socials.is-toggled > .link {  
+  opacity: 0.8;
+  transform: none;
+  transition: opacity 600ms ease-in;  
+}
+
+#menu-socials.is-toggled > .link:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+#menu-socials.is-toggled > .link:nth-of-type(3) {
+  transition-delay: 150ms;
+}
+
+#menu-socials.is-toggled > .link:nth-of-type(4) {
+  transition-delay: 200ms;
+} */
+
+#menu-socials.is-toggled > .link > .link-icon{  
+  opacity: 0.8;
+  transform: none;
+  transition: opacity 600ms ease-in;  
+}
+
+#menu-socials.is-toggled > .link > .link-icon:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+#menu-socials.is-toggled > .link > .link-icon:nth-of-type(3) {
+  transition-delay: 150ms;
+}
+
+#menu-socials.is-toggled > .link > .link-icon:nth-of-type(4) {
+  transition-delay: 200ms;
+}
+
+#menu-socials {
+  justify-self: center;
+
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+  justify-content: center;
+
+  
+}
+
+/* #menu-socials > .link {
+  font-size: 2rem;
+  color: var(--background-light);
+  box-shadow: 0 8px 32px 0 rgba(25, 25, 25, 0.37);
+  cursor: pointer;
+  opacity: 0;
+  position: relative;
+  transition: opacity 250ms ease-in;
+} */
+
+#menu-socials > .link {
+  position: relative;
+}
+
+#menu-socials > .link > .link-icon:hover {
+  animation-name: pulse;
+  animation-duration: 0s;
+
+}
+
+.link-icon {
+  font-size: 2rem;
+  color: var(--background-light);
+  box-shadow: 0 8px 32px 0 rgba(25, 25, 25, 0.37);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}

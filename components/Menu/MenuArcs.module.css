@@ -1,0 +1,48 @@
+@keyframes arc-rotation {
+  from {
+    transform: translate3d(-50%, -50%, 0px) rotate(0deg);
+  }
+  
+  to {
+    transform: translate3d(-50%, -50%, 0px) rotate(360deg);
+  }
+}
+
+
+.menu-arcs-wrapper.is-toggled {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 600ms cubic-bezier(.16, .68, .25, .83), 
+    opacity 600ms cubic-bezier(.87, .12, .92, .39); 
+}
+
+
+.menu-arcs-wrapper {
+  height: clamp(600px, 200vmax, 6000px);
+  left: 0px;
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  transform: scale(1.15) translate3d(20%, 20%, 0px);
+  transition: transform 600ms cubic-bezier(.87, .12, .92, .39), 
+    opacity 600ms cubic-bezier(.87, .12, .92, .39);  
+  width: clamp(600px, 200vmax, 6000px);
+  z-index: 3;
+}
+
+.menu-arcs-wrapper > .menu-arcs {
+  animation: arc-rotation 100s linear infinite;
+  height: 100%;
+  left: 0px;  
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  will-change: transform;
+}
+
+.menu-arcs-wrapper > .menu-arcs > .menu-arc {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.5);
+  stroke-dasharray: 2,10;
+  stroke-width: 1;
+}

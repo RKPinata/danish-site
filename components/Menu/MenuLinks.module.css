@@ -1,0 +1,23 @@
+
+#menu-links {
+  inset: 0px;
+  position: absolute;
+  z-index: 4;
+
+  /* below is to place socials at bottom with flex-end */
+  display:flex; 
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10vh;
+}
+
+#menu-links > .link-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  gap: 30px;
+  justify-content: center; 
+  inset: 0;
+  position:absolute;
+}
+

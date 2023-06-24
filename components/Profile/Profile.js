@@ -19,7 +19,7 @@ function Profile() {
         <h2>Muhammad Danish</h2>
       </div> */}
       <h1 className={styles["profile-intro"]}>
-        I'm a{" "}
+        I&aposm a{" "}
         <span className={styles["profile-title"]}>
           Frontend Developer
         </span>{" "}
@@ -28,7 +28,7 @@ function Profile() {
       <section>
         <h3>About Me</h3>
         <p>
-          I'm a Frontend Developer and Multimedia Producer. I have 5 years of
+          I&aposm a Frontend Developer and Multimedia Producer. I have 5 years of
           experience in the different stages in Web Development: planning,
           prototyping, Interface design and frontend development. Worked with
           multiple technologies, made multiple webs and apps of different

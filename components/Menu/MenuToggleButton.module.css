@@ -11,7 +11,7 @@
   left: 30px;
   padding: 0px;
   pointer-events: all;
-  position: fixed;
+  position: absolute;
   top: 30px;
   width: 50px;
   z-index: 5;
@@ -104,10 +104,10 @@
   background-color: var(--background-dark);
   display: block;
   height: 3px;
-  transition: transform 250ms;
+  transition: transform 250ms, color 300ms;
   width: 24px;
 }
- 
+
  .menu-toggle > span:first-of-type {
   transform: translate3d(0px, 8px, 0px) rotate(45deg);
 }
@@ -134,10 +134,13 @@
 }
 
 .menu-toggle > .menu-toggle-label > .word {
+  position: relative;
+  top: 0.18em;
   font-family: 'Space__Grotesk', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
-  transition: opacity 250ms, transform 250ms;
+  transition: opacity 250ms, transform 250ms color 300ms;
+  color: var(--background-dark);
 }
 
 .menu-toggle.is-toggled:hover > span:nth-of-type(2),
@@ -165,3 +168,14 @@
   transition: opacity 250ms cubic-bezier(.71, .19, .87, .33), 
     transform 250ms cubic-bezier(.71, .19, .87, .33);
 }
+
+.menu-toggle.scrolled > .menu-toggle-label > .word {
+  color: var(--background-light);
+  transition: color 300ms;
+}
+
+.menu-toggle.scrolled > span {
+  background-color: var(--background-light);
+  transition: color 300ms;
+}
+ 

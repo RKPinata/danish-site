@@ -1,32 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "./MenuToggleButton.module.css";
 import { useRouter } from "next/router";
 
-import localFont from '@next/font/local'
-const wildWorld = localFont({src:'../../fonts/wild-world.otf'})
+import localFont from "@next/font/local";
+const wildWorld = localFont({ src: "../../fonts/wild-world.otf" });
 
 function MenuToggleButton(props) {
   const router = useRouter();
 
-  const pathName = router.pathname
-  
+  const pathName = router.pathname;
+
   function getMenuTitle(pathName) {
+    console.log(props.isScrolled)
     switch (pathName) {
-      case '/works':
-        return 'WORKS';
-      case '/':
-        return 'PROFILE';
-      case '/contact':
-        return 'CONTACT';
+      case "/works":
+        return "WORKS";
+      case "/":
+        return "PROFILE";
+      case "/contact":
+        return "CONTACT";
       default:
-        return '';
+        return "";
     }
   }
 
-  const menuLabel = getMenuTitle(pathName)
-  
-  
+  const menuLabel = getMenuTitle(pathName);
 
   return (
     <button
@@ -34,13 +33,15 @@ function MenuToggleButton(props) {
       type={props.type}
       className={`${styles["menu-toggle"]} ${
         props.isToggled ? styles["is-toggled"] : ""
-      } `}
+      } ${props.isScrolled ? styles["scrolled"] : ""}`}
     >
       <span className={styles["line"]}></span>
       <span className={styles["line"]}></span>
       <span className={styles["line"]}></span>
       <div className={styles["menu-toggle-label"]}>
-        <span style={wildWorld.style} className={styles["word"]}>{menuLabel}</span>
+        <span style={wildWorld.style} className={styles["word"]}>
+          {menuLabel}
+        </span>
       </div>
     </button>
   );

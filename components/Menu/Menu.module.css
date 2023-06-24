@@ -10,11 +10,29 @@
   height: 100vh;
   left: 0px;
   overflow: hidden;
-  pointer-events: none; 
+  pointer-events: none;
   position: fixed;
   top: 0px;
   width: 100vw;
   z-index: 100;
+}
+
+.menu-bg {
+  padding-top: 110px;
+  height: 84px;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  transition: background-color 0.3s;
+
+}
+
+.menu-bg.scrolled{
+  background: rgba(20, 20, 20, 0.48);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.1px);
+  -webkit-backdrop-filter: blur(12.1px);
+  transition: background-color 0.3s;
 }
 
 .menu-toggled {
@@ -22,13 +40,13 @@
 }
 
 .menu-toggled > .menu {
-  pointer-events: all; 
+  pointer-events: all;
 }
 
-.menu-toggled > .menu > .menu-links > .link {  
+.menu-toggled > .menu > .menu-links > .link {
   opacity: 1;
   transform: none;
-  transition: opacity 600ms ease-in;  
+  transition: opacity 600ms ease-in;
 }
 
 .menu-toggled > .menu > .menu-links > .link:nth-of-type(2) {

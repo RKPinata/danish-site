@@ -15,7 +15,7 @@ function MenuNav(props) {
       <Link
         className={styles.link}
         href="/"
-        onClick={router.asPath === "/" && props.onToggleMenu}
+        onClick={props.onToggleMenu}
       >
         <span className={styles.anchor}></span>
         <span className={styles.index}>01</span>
@@ -24,7 +24,7 @@ function MenuNav(props) {
       <Link
         className={styles.link}
         href="/works"
-        onClick={router.asPath === "/works" && props.onToggleMenu}
+        onClick={props.onToggleMenu}
       >
         <span className={styles.anchor}></span>
         <span className={styles.index}>02</span>
@@ -32,8 +32,8 @@ function MenuNav(props) {
       </Link>
       <Link
         className={styles.link}
-        href="/contact"
-        onClick={router.asPath === "/contact" && props.onToggleMenu}
+        href="/"
+        onClick={props.onToggleMenu}
       >
         <span className={styles.anchor}></span>
         <span className={styles.index}>03</span>
@@ -42,7 +42,7 @@ function MenuNav(props) {
       <Link
         className={styles.link}
         href="/contact"
-        onClick={router.asPath === "/contact" && props.onToggleMenu}
+        onClick={props.onToggleMenu}
       >
         <span className={styles.anchor}></span>
         <span className={styles.index}>04</span>

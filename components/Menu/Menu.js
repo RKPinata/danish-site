@@ -8,31 +8,31 @@ import MenuToggleButton from "./MenuToggleButton";
 import MenuArcs from "./MenuArcs";
 import MenuBackground from "./MenuBackground";
 import MenuLinks from "./MenuLinks";
-import MenuSocials from "./MenuSocials";
 
 function Menu() {
   const [menuToggled, setMenuToggled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
 
   const toggleMenuHandler = () => {
     setMenuToggled(!menuToggled);
   };
 
-  /* useEffect(() => {
-    if (router.asPath === "/") {
-      setTimeout(setMenuToggled(true), 200)
-    } else {
-      setTimeout(setMenuToggled(false), 200)
-    }
-  },[router.asPath]) */
-
   useEffect(() => {
-    setTimeout(setMenuToggled(true), 200);
+    setMenuToggled(true);
+
+    const handleScroll = () => {
+      const scrolled = window.scrollY > 0;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  useEffect(() => {
-    toggleMenuHandler();
-  }, [router.asPath]);
 
   return (
     <div
@@ -40,16 +40,20 @@ function Menu() {
         menuToggled ? styles["menu-toggled"] : ""
       }`}
     >
+      
+      <div className={`${styles["menu-bg"]} ${
+        isScrolled ? styles["scrolled"] : ""
+      }`}/>
       <div className={styles.menu}>
         <MenuToggleButton
           onClick={toggleMenuHandler}
           type="button"
           isToggled={menuToggled}
+          isScrolled={isScrolled}
         />
         <MenuBackground isToggled={menuToggled} />
         <MenuArcs isToggled={menuToggled} />
         <MenuLinks isToggled={menuToggled} onToggleMenu={toggleMenuHandler} />
-        {/* <MenuSocials isToggled={menuToggled}/> */}
       </div>
     </div>
   );

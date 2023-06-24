@@ -26,7 +26,7 @@
   left: 0px;  
   opacity: 0;
   position: absolute;
-  transform: translate3d(-50%, -50%, 0px) scale(2);
+  transform: translate3d(-50%, -50%, 0px) scale(6);
   transition: height 600ms cubic-bezier(.75, .1, .89, .36),
     width 600ms cubic-bezier(.75, .1, .89, .36),
     transform 600ms cubic-bezier(.75, .1, .89, .36),

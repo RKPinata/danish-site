@@ -36,7 +36,7 @@ function Profile() {
         </p>
 
         <p>
-          Likewise, I love tech and the power it has over people, that’s why I
+          Likewise, I love tech and the power it has over people, that&aposs why I
           believe in continuous learning as a philosophy, the creation of unique
           experiences for the user and the transformation of the world through
           technology.
@@ -54,7 +54,7 @@ function Profile() {
         <h3>Skills & Tech Stack</h3>
         <ul>
           <li>HTML5, CSS3, JavaScript</li>
-          <li>React.js & Next.jst</li>
+          <li>React.js & Next.js</li>
           <li>CSS Modules, Styled Components,TailwindCss, PostCSS</li>
           <li>Git</li>
         </ul>

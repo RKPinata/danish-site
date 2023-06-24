@@ -12,6 +12,7 @@ function MenuToggleButton(props) {
   const pathName = router.pathname;
 
   function getMenuTitle(pathName) {
+    console.log('pageisScrolled')
     console.log(props.isScrolled)
     switch (pathName) {
       case "/works":

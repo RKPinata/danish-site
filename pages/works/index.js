@@ -9,46 +9,15 @@ function index() {
 
     <>
       <Link href='/'>profile</Link>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
-      <h1>asdasd</h1>
+      <h1>asdfas</h1>
+      <h1>asdfas</h1>
+      <h1>asdfas</h1>
+      <h1>asdfas</h1>
+      <h1>asdfas</h1>
+      <h1>asdfas</h1>
+      <h1>asdfas</h1>
+      <h1>asdfas</h1>
+      <h1>asdfas</h1>
     </>
   )
 }

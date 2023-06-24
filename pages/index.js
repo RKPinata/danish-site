@@ -1,15 +1,16 @@
 import React from "react";
-
-import styles from "./index.module.css"
-
 import Link from "next/link";
 
+import styles from "./index.module.css";
+
+import Profile from "@/components/Profile/Profile";
+
 function HomePage() {
+  
+
   return (
     <>
-      <div>
-        asdfasd
-      </div>
+      <Profile/>
     </>
   );
 }

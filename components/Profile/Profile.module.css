@@ -1,0 +1,26 @@
+.profile-container {
+  margin: 110px 20px 5vh 20px;
+  height: 100%;
+  padding: 10px;
+
+  border-radius: 10px;
+  background: #0d0d0d;
+  box-shadow: 5px 5px 25px #0a0a0a, -5px -5px 25px #101010;
+
+}
+
+.profile-intro {
+  font-size:1.7em;
+}
+
+.profile-title {
+  font-weight:bolder;
+  background: #005aa7 ;
+  background: linear-gradient(to right, #005aa7 10%, #fffde4 98%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-experience {
+  display:flex;
+}

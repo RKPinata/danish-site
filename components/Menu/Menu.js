@@ -12,7 +12,6 @@ import MenuLinks from "./MenuLinks";
 function Menu() {
   const [menuToggled, setMenuToggled] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const router = useRouter();
 
   const toggleMenuHandler = () => {
     setMenuToggled(!menuToggled);

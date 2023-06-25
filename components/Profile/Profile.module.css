@@ -1,49 +1,86 @@
 .profile-container {
   margin: 110px 20px 5vh 20px;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
 
   border-radius: 10px;
   background: #0d0d0d;
   box-shadow: 5px 5px 25px #0a0a0a, -5px -5px 25px #101010;
 
-  display:flex;
+  display: flex;
   flex-direction: column;
-
 }
 
 .profile-container > section {
-  margin-bottom: 1em;
+  margin-bottom: 10px;
 }
 
-.profile-container > section > .profile-img{
-  margin: 1em auto 0 auto;
-  margin-bottom: 1em;
+.profile-container > section.profile-name-img {
+  display: grid;
+  place-items: center;
 }
 
-.profile-container > section > p {
-  text-align: justify;
-
-}
-
-.profile-img {
+.profile-container > section > .profile-img {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+
+  margin: 1em auto 0 auto;
 }
 
-.profile-intro {
-  font-size:1.7em;
+.profile-container > section > h1.profile-name {
+  margin-top: 10px;
+  color: var(--background-light);
+}
+
+.profile-container > section > h3::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(111.3deg, #005aa7 9.6%, #fffde4 93.6%);
+}
+
+.profile-container > section > h3 {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 
 .profile-title {
-  font-weight:bolder;
-  background: #005aa7 ;
+  font-weight: bolder;
+  background: #005aa7;
   background: linear-gradient(to right, #005aa7 10%, #fffde4 98%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.profile-intro {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.profile-paragraph {
+  text-align: justify;
+}
+
 .profile-experience {
-  display:flex;
+  display: grid;
+  grid-template-columns: 90px 1fr; 
+  margin-bottom: 10px;
+}
+
+.profile-experience:last-child {
+  margin-bottom: 0px;
+}
+
+.profile-experience > p {
+  line-height: 1.2em;
+  margin-right: 20px;
+}
+
+.profile-experience > div {
+  width: 100%;
 }

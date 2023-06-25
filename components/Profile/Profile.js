@@ -19,16 +19,14 @@ function Profile() {
         <h2>Muhammad Danish</h2>
       </div> */}
       <h1 className={styles["profile-intro"]}>
-        I&aposm a{" "}
-        <span className={styles["profile-title"]}>
-          Frontend Developer
-        </span>{" "}
+        {"I'm a "}
+        <span className={styles["profile-title"]}>Frontend Developer</span>{" "}
         based in Kuala Lumpur
       </h1>
       <section>
         <h3>About Me</h3>
         <p>
-          I&aposm a Frontend Developer and Multimedia Producer. I have 5 years of
+          I'm a Frontend Developer and Multimedia Producer. I have 5 years of
           experience in the different stages in Web Development: planning,
           prototyping, Interface design and frontend development. Worked with
           multiple technologies, made multiple webs and apps of different
@@ -36,16 +34,16 @@ function Profile() {
         </p>
 
         <p>
-          Likewise, I love tech and the power it has over people, that&aposs why I
+          Likewise, I love tech and the power it has over people, that's why I
           believe in continuous learning as a philosophy, the creation of unique
           experiences for the user and the transformation of the world through
           technology.
         </p>
       </section>
-      <Link href='/works'>View Works</Link>
+      <Link href="/works">View Works</Link>
       <section>
         <h3>Experience</h3>
-        <div className={styles['profile-experience']}>
+        <div className={styles["profile-experience"]}>
           <p style={spaceGrotesk.style}>date</p>
           <p>Job</p>
         </div>

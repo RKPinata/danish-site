@@ -43,8 +43,7 @@ function Profile() {
         <h3>About Me</h3>
         <p className={styles["profile-paragraph"]}>
           I&apos;m a Frontend Developer who is enthusiastic about creating
-          engaging web experiences that combine aesthetics with functionality. I
-          am familiar with the different stages in Web Development: planning,
+          engaging web experiences that combine aesthetics with functionality. I&apos;m familiar with the different stages in Web Development: planning,
           prototyping, design and development. With excellent problem-solving
           skills and attention to detail, I&apos;m committed to creating
           intuitive and visually appealing interfaces that enhance user
@@ -66,7 +65,7 @@ function Profile() {
               Furthermore, I collaborated closely with mobile engineering team
               to develop the Pet Mall app using React Native. This comprehensive
               application serves as a one-stop solution for pet owners,
-              enhancing their experience in fulfilling their pets' needs.
+              enhancing their experience in fulfilling their pets&apos; needs.
             </p>
           </div>
         </div>
@@ -79,7 +78,7 @@ function Profile() {
               I provide creative and interactive solutions that deliver
               exceptional user experiences. From crafting responsive layouts to
               implementing complex functionalities, I am dedicated to bringing
-              my clients' visions to life.
+              my clients&apos; visions to life.
             </p>
           </div>
         </div>

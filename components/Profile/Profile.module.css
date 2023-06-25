@@ -68,7 +68,7 @@
 
 .profile-experience {
   display: grid;
-  grid-template-columns: 90px 1fr; 
+  grid-template-columns: 90px 1fr;
   margin-bottom: 10px;
 }
 
@@ -83,4 +83,11 @@
 
 .profile-experience > div {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .profile-container {
+    max-width:  768px;
+    margin: 110px auto 5vh auto;
+  }
 }

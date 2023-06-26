@@ -21,6 +21,7 @@
 
 body {
   line-height: 1.5;
+  background-color: var(--background-light);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -38,6 +39,7 @@ input, button, textarea, select {
   color: inherit;
   cursor: pointer;
   outline: none;
+  resize: none;
 }
 
 p, h1, h2, h3, h4, h5, h6, ul{

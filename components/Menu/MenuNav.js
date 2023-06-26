@@ -32,22 +32,22 @@ function MenuNav(props) {
       </Link>
       <Link
         className={styles.link}
-        href="/"
-        onClick={props.onToggleMenu}
-      >
-        <span className={styles.anchor}></span>
-        <span className={styles.index}>03</span>
-        <span className={styles.label}>Planet</span>
-      </Link>
-      <Link
-        className={styles.link}
         href="/contact"
         onClick={props.onToggleMenu}
       >
         <span className={styles.anchor}></span>
-        <span className={styles.index}>04</span>
+        <span className={styles.index}>03</span>
         <span className={styles.label}>Contact</span>
       </Link>
+      {/* <Link
+        className={styles.link}
+        href="/planet"
+        onClick={props.onToggleMenu}
+      >
+        <span className={styles.anchor}></span>
+        <span className={styles.index}>04</span>
+        <span className={styles.label}>Planet</span>
+      </Link> */}
     </div>
   );
 }

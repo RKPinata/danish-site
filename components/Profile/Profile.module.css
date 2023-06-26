@@ -1,15 +1,4 @@
-.profile-container {
-  margin: 110px 20px 5vh 20px;
-  height: 100%;
-  padding: 20px;
 
-  border-radius: 10px;
-  background: #0d0d0d;
-  box-shadow: 5px 5px 25px #0a0a0a, -5px -5px 25px #101010;
-
-  display: flex;
-  flex-direction: column;
-}
 
 .profile-container > section {
   margin-bottom: 10px;
@@ -77,17 +66,10 @@
 }
 
 .profile-experience > p {
-  line-height: 1.2em;
   margin-right: 20px;
+  font-weight: bold;
 }
 
 .profile-experience > div {
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  .profile-container {
-    max-width:  768px;
-    margin: 110px auto 5vh auto;
-  }
 }

@@ -1,0 +1,49 @@
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.container label {
+  color: var(--background-light);
+}
+
+.container input {
+  font-size: 1.2rem;
+  margin: 10px 0 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--background-light);
+}
+
+.container textarea {
+  margin: 10px 0 10px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--background-light);
+  font-size: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.name div {
+  display: flex;
+  flex-direction: column;
+}
+
+.block button {
+  padding: 10px;
+  font-size: 20px;
+  width: 30%;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  color: #005aa7;
+  font-weight: bold;
+}

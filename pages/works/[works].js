@@ -11,7 +11,7 @@ import worksData from "@/data/worksData";
 import { dinivideographerportfolio } from "@/data/worksData";
 import Button from "@/components/UI/Button";
 
-function works() {
+function Works() {
   const router = useRouter();
   const { works } = router.query;
 
@@ -95,4 +95,4 @@ function works() {
     </>
   );
 }
-export default works;
+export default Works;

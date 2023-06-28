@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./ContactForm.module.css";
+import Button from "../UI/Button";
 
 function ContactForm() {
   async function submitHandler(event) {
@@ -59,11 +60,9 @@ function ContactForm() {
       </div>
       <div className={`${styles.message} ${styles.block}`}>
         <label htmlFor="frm-message">Message</label>
-        <textarea id="frm-message" rows="6" name="message"></textarea>
+        <textarea id="frm-message" rows="4" name="message"></textarea>
       </div>
-      <div className={`${styles.button} ${styles.block}`}>
-        <button type="submit">Submit</button>
-      </div>
+      <Button type="submit" label='Submit' />
     </form>
   );
 }

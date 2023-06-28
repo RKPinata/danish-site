@@ -12,16 +12,19 @@ function MenuToggleButton(props) {
   const pathName = router.pathname;
 
   function getMenuTitle(pathName) {
-    switch (pathName) {
-      case "/works":
-        return "WORKS";
-      case "/":
-        return "PROFILE";
-      case "/contact":
-        return "CONTACT";
-      default:
-        return "";
+    const regex = /^\/(\w+)?/;
+    const match = pathName.match(regex);
+    if (match && match[1]) {
+      switch (match[1]) {
+        case "works":
+          return "WORKS";
+        case "contact":
+          return "CONTACT";
+        default:
+          return "PROFILE";
+      }
     }
+    return "PROFILE";
   }
 
   const menuLabel = getMenuTitle(pathName);

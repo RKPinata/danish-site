@@ -1,0 +1,54 @@
+.container {
+  display:grid;
+  place-items: center;
+
+}
+
+.swiper-container {
+  max-width: 300px;
+  border-radius: 15px;
+  padding-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.swiper-slide{
+  width: 300px;
+}
+
+.image  {
+  border-radius: 15px;
+  height:600px;
+  max-width: 300px;
+  object-fit: cover;
+  overflow: hidden;
+  height: 100%;
+  width:100%;
+}
+
+.image-title {
+  padding-top: 5px;
+  padding-left: 5px;
+  line-height: normal;
+  height:150px;
+  width:100%;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 1) 0%, rgba(20, 20, 20, 0) 100%);
+}
+.image-title > p {
+  position: relative;
+  display: inline-block;
+}
+
+.image-title > p::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(111.3deg, #005aa7 9.6%, #fffde4 93.6%);
+}
+
+.image-title:hover {
+  cursor:pointer;
+}

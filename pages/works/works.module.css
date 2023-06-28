@@ -1,0 +1,35 @@
+.container > section {
+  margin-bottom: 10px;
+}
+
+.container > section > h1{
+  font-size: 2rem;
+}
+
+
+.container > section > h2 {
+  margin-bottom: 10px;
+}
+
+
+.image-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.image-mobile {
+  border-radius: 15px;
+  height: 600px;
+  width:auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.image-desktop {
+  border-radius: 15px;
+  height:auto;
+  width:auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}

@@ -73,3 +73,9 @@
 .profile-experience > div {
   width: 100%;
 }
+
+.profile-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}

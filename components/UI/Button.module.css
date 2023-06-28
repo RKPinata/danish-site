@@ -1,0 +1,51 @@
+.button {
+  padding: 10px 0;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--background-light);
+  line-height: normal;
+  position:relative;
+  top:3px;
+}
+
+@media (max-width:390px) {
+  .label {font-size: 1.2rem;}
+}
+
+.button:hover .chevron {
+  opacity: 1;
+  transition: opacity 350ms, transform 350ms;
+  transform: translate3d(-100%, 0px, 0px);
+}
+
+.button:hover .chevron:nth-of-type(2) {
+  opacity: 1;
+  transition: opacity 350ms, transform 350ms;
+  transform: translate3d(-100%, 0px, 0px) ;
+} 
+
+.button:hover .chevron:nth-of-type(3) {
+  opacity: 1;
+  transition: opacity 250ms, transform 250ms;
+  transform: translate3d(100%, 0px, 0px);
+} 
+
+.button:hover .chevron:nth-of-type(4) {
+  opacity: 1;
+  transition: opacity 350ms, transform 350ms;
+  transform: translate3d(100%, 0px, 0px) ;
+} 
+
+
+.chevron {
+  font-size: 1.2rem;
+  opacity: 0;
+  color: #fa3a00;
+  position: relative;
+  transition: opacity 250ms cubic-bezier(0.71, 0.19, 0.87, 0.33),
+    transform 250ms cubic-bezier(0.71, 0.19, 0.87, 0.33);
+}
+

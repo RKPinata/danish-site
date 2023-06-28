@@ -14,6 +14,7 @@ const spaceGrotesk = Space_Grotesk({
 
 import localFont from "@next/font/local";
 import Card from "../UI/Card";
+import Button from "../UI/Button";
 const wildWorld = localFont({ src: "../../fonts/wild-world.otf" });
 
 
@@ -53,7 +54,9 @@ function Profile() {
             engagement.
           </p>
         </section>
-        {/* <Link href="/works" className={styles["profile-button"]>View Works</Link> */}
+        <section>
+          <Link href="/works" className={styles['profile-button']}><Button label='View My Work'/></Link>
+        </section>
         <section>
           <h3>Experiences</h3>
           <div className={styles["profile-experience"]}>

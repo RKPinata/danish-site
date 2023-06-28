@@ -47,6 +47,10 @@ p, h1, h2, h3, h4, h5, h6, ul{
   color: var(--background-light);
 }
 
+a {
+  color: inherit; /* Set the color to inherit to remove the default link color */
+}
+
 ul {
   padding-left: 1em;
 }

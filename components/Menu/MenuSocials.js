@@ -9,6 +9,7 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "animate.css";
 
 function MenuSocials(props) {
@@ -23,7 +24,7 @@ function MenuSocials(props) {
           className={`${styles["link-icon"]} animate__animated animate__headShake`}
         ></FontAwesomeIcon>
       </Link>
-      <Link href="www.linkedin.com/in/danishteuku/" className={styles.link}>
+      <Link href="https://linkedin.com/in/danishteuku/" className={styles.link}>
         <FontAwesomeIcon
           icon={faLinkedin}
           className={`${styles["link-icon"]} animate__animated animate__headShake`}
@@ -36,11 +37,11 @@ function MenuSocials(props) {
         ></FontAwesomeIcon>
       </Link>
       <Link
-        href="https://www.instagram.com/teukudanish/"
+        href="mailto:mail.danish@pm.me"
         className={styles.link}
       >
         <FontAwesomeIcon
-          icon={faInstagram}
+          icon={faEnvelope}
           className={`${styles["link-icon"]} animate__animated animate__headShake`}
         ></FontAwesomeIcon>
       </Link>

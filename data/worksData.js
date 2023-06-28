@@ -142,7 +142,7 @@ export const myBlog = {
     "I made this blog for me to share my thought and experiences.It has a light and dark mode, for readers with preferances.",
   stack: "React + Nextjs, TailwindCss",
   github: "https://github.com/RKPinata/danishblog",
-  link: "https://danishblog.vercel.app/",
+  link: "https://danishblog.netlify.app/",
   images: {
     mobile: {
       image1: myBlog1,

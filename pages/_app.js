@@ -1,5 +1,4 @@
-import "../styles/globals.css";
-
+import "@/src/styles/globals.css";
 import { Space_Grotesk } from '@next/font/google'
 
 import NavLayout from "@/components/layouts/nav";

@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 import localFont from "@next/font/local";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
-const wildWorld = localFont({ src: "../../fonts/wild-world.otf" });
+const wildWorld = localFont({ src: "../../src/fonts/wild-world.otf" });
 
 
 

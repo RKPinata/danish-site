@@ -4,7 +4,7 @@ import styles from "./MenuToggleButton.module.css";
 import { useRouter } from "next/router";
 
 import localFont from "@next/font/local";
-const wildWorld = localFont({ src: "../../fonts/wild-world.otf" });
+const wildWorld = localFont({ src: "../../src/fonts/wild-world.otf" });
 
 function MenuToggleButton(props) {
   const router = useRouter();

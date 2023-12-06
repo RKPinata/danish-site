@@ -2,7 +2,7 @@ import Menu from "@/src/components/Menu/Menu";
 import Head from "next/head";
 import Footer from "../Footer";
 
-import { skModernist } from "@/src/public/fonts/font-provider";
+import { skModernist } from "@/public/fonts/font-provider";
 
 const Layout = ({ children, router }) => {
   return (

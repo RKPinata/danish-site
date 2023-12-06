@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,8 +5,8 @@ import styles from "./Profile.module.css";
 
 import myPic from "@/src/public/danish-img.webp";
 
-import Card from "../UI/Card";
 import Button from "../UI/Button";
+import Card from "../UI/Card";
 
 import { wildWorld } from "@/src/public/fonts/font-provider";
 

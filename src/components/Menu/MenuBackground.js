@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./MenuBackground.module.css";
 
 function MenuBackground(props) {

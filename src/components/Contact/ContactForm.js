@@ -1,7 +1,5 @@
-import React from "react";
-
-import styles from "./ContactForm.module.css";
 import Button from "../UI/Button";
+import styles from "./ContactForm.module.css";
 
 function ContactForm() {
   async function submitHandler(event) {
@@ -62,7 +60,7 @@ function ContactForm() {
         <label htmlFor="frm-message">Message</label>
         <textarea id="frm-message" rows="4" name="message"></textarea>
       </div>
-      <Button type="submit" label='Submit' />
+      <Button type="submit" label="Submit" />
     </form>
   );
 }

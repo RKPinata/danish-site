@@ -1,15 +1,13 @@
-import React from "react";
-import styles from "./MenuSocials.module.css";
 import Link from "next/link";
+import styles from "./MenuSocials.module.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
   faTwitter,
-  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css";
 
 function MenuSocials(props) {
@@ -36,10 +34,7 @@ function MenuSocials(props) {
           className={`${styles["link-icon"]} animate__animated animate__headShake`}
         ></FontAwesomeIcon>
       </Link>
-      <Link
-        href="mailto:mail.danish@pm.me"
-        className={styles.link}
-      >
+      <Link href="mailto:mail.danish@pm.me" className={styles.link}>
         <FontAwesomeIcon
           icon={faEnvelope}
           className={`${styles["link-icon"]} animate__animated animate__headShake`}

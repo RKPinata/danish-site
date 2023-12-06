@@ -1,8 +1,6 @@
-import React from "react";
-
-import styles from "./MenuNav.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styles from "./MenuNav.module.css";
 
 function MenuNav(props) {
   const router = useRouter();
@@ -12,20 +10,12 @@ function MenuNav(props) {
         props.isToggled ? styles["is-toggled"] : ""
       } `}
     >
-      <Link
-        className={styles.link}
-        href="/"
-        onClick={props.onToggleMenu}
-      >
+      <Link className={styles.link} href="/" onClick={props.onToggleMenu}>
         <span className={styles.anchor}></span>
         <span className={styles.index}>01</span>
         <span className={styles.label}>Profile</span>
       </Link>
-      <Link
-        className={styles.link}
-        href="/works"
-        onClick={props.onToggleMenu}
-      >
+      <Link className={styles.link} href="/works" onClick={props.onToggleMenu}>
         <span className={styles.anchor}></span>
         <span className={styles.index}>02</span>
         <span className={styles.label}>Works</span>

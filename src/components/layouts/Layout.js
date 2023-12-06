@@ -1,5 +1,5 @@
-import Head from "next/head";
 import Menu from "@/src/components/Menu/Menu";
+import Head from "next/head";
 import Footer from "../Footer";
 
 import { skModernist } from "@/src/public/fonts/font-provider";
@@ -13,7 +13,7 @@ const Layout = ({ children, router }) => {
       </Head>
       <Menu />
       <main className={skModernist.className}>{children}</main>
-      <Footer/>
+      <Footer />
     </>
   );
 };

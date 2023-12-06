@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 
 import styles from "./Menu.module.css";
 
-import MenuToggleButton from "./MenuToggleButton";
 import MenuArcs from "./MenuArcs";
 import MenuBackground from "./MenuBackground";
 import MenuLinks from "./MenuLinks";
+import MenuToggleButton from "./MenuToggleButton";
 
 function Menu() {
   const [menuToggled, setMenuToggled] = useState(false);

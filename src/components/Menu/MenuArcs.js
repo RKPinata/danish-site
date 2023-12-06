@@ -1,5 +1,3 @@
-import React from "react";
-
 import styles from "./MenuArcs.module.css";
 
 function MenuArcs(props) {

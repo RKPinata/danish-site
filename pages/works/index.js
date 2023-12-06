@@ -14,13 +14,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
-import slide_image_1 from "@/public/assets/works/img_furtory-vet-on-call.PNG";
-import slide_image_2 from "@/public/assets/works/img_furtory-pet-mall.JPG";
-import slide_image_3 from "@/public/assets/works/img_dini.png";
-import slide_image_4 from "@/public/assets/works/img_nft.png";
-import slide_image_5 from "@/public/assets/works/img_voice-call.png";
-import slide_image_6 from "@/public/assets/works/img_ordering.PNG";
-import slide_image_7 from "@/public/assets/works/img_blog.png";
+import slide_image_1 from "@/src/public/assets/works/img_furtory-vet-on-call.PNG";
+import slide_image_2 from "@/src/public/assets/works/img_furtory-pet-mall.JPG";
+import slide_image_3 from "@/src/public/assets/works/img_dini.png";
+import slide_image_4 from "@/src/public/assets/works/img_nft.png";
+import slide_image_5 from "@/src/public/assets/works/img_voice-call.png";
+import slide_image_6 from "@/src/public/assets/works/img_ordering.PNG";
+import slide_image_7 from "@/src/public/assets/works/img_blog.png";
 
 import { useRouter } from "next/router";
 

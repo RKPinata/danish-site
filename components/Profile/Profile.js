@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import styles from "./Profile.module.css";
 
-import myPic from "@/public/danish-img.webp";
+import myPic from "@/src/public/danish-img.webp";
 
 import Card from "../UI/Card";
 import Button from "../UI/Button";

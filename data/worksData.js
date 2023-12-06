@@ -20,12 +20,12 @@ export const furtoryVetOnCall = {
   video: "",
 };
 
-import diniMobile1 from "@/public/assets/works/dini-notebook/IMG_1.png";
-import diniMobile2 from "@/public/assets/works/dini-notebook/IMG_2.png";
-import diniMobile3 from "@/public/assets/works/dini-notebook/IMG_3.png";
-import dini1 from "@/public/assets/works/dini-notebook/IMG_4.png";
-import dini2 from "@/public/assets/works/dini-notebook/IMG_5.png";
-import dini3 from "@/public/assets/works/dini-notebook/IMG_6.png";
+import diniMobile1 from "@/src/public/assets/works/dini-notebook/IMG_1.png";
+import diniMobile2 from "@/src/public/assets/works/dini-notebook/IMG_2.png";
+import diniMobile3 from "@/src/public/assets/works/dini-notebook/IMG_3.png";
+import dini1 from "@/src/public/assets/works/dini-notebook/IMG_4.png";
+import dini2 from "@/src/public/assets/works/dini-notebook/IMG_5.png";
+import dini3 from "@/src/public/assets/works/dini-notebook/IMG_6.png";
 
 export const diniVideographerPortfolio = {
   title: "Dini Videographer Portfolio",
@@ -48,7 +48,7 @@ export const diniVideographerPortfolio = {
   },
 };
 
-import petMallMobile1 from "@/public/assets/works/furtory-pet-mall/IMG_1.JPG";
+import petMallMobile1 from "@/src/public/assets/works/furtory-pet-mall/IMG_1.JPG";
 
 export const furtoryPetMall = {
   title: "Furtory Pet Mall",
@@ -63,10 +63,10 @@ export const furtoryPetMall = {
   },
 };
 
-import nftDrop1 from "@/public/assets/works/nftdrop/IMG_1.png";
-import nftDrop2 from "@/public/assets/works/nftdrop/IMG_2.png";
-import nftDrop3 from "@/public/assets/works/nftdrop/IMG_3.png";
-import nftDrop4 from "@/public/assets/works/nftdrop/IMG_4.png";
+import nftDrop1 from "@/src/public/assets/works/nftdrop/IMG_1.png";
+import nftDrop2 from "@/src/public/assets/works/nftdrop/IMG_2.png";
+import nftDrop3 from "@/src/public/assets/works/nftdrop/IMG_3.png";
+import nftDrop4 from "@/src/public/assets/works/nftdrop/IMG_4.png";
 
 export const nftDrop = {
   title: "NFT Drop Site (Mock)",
@@ -87,10 +87,10 @@ export const nftDrop = {
   },
 };
 
-import voiceCall1 from "@/public/assets/works/voice-call-app/IMG_1.png";
-import voiceCall2 from "@/public/assets/works/voice-call-app/IMG_2.png";
-import voiceCall3 from "@/public/assets/works/voice-call-app/IMG_3.png";
-import voiceCall4 from "@/public/assets/works/voice-call-app/IMG_4.png";
+import voiceCall1 from "@/src/public/assets/works/voice-call-app/IMG_1.png";
+import voiceCall2 from "@/src/public/assets/works/voice-call-app/IMG_2.png";
+import voiceCall3 from "@/src/public/assets/works/voice-call-app/IMG_3.png";
+import voiceCall4 from "@/src/public/assets/works/voice-call-app/IMG_4.png";
 
 export const voiceCallApp = {
   title: "Voice Call App",
@@ -111,8 +111,8 @@ export const voiceCallApp = {
   },
 };
 
-import ordering1 from "@/public/assets/works/food-ordering/IMG_1.png";
-import ordering2 from "@/public/assets/works/food-ordering/IMG_2.png";
+import ordering1 from "@/src/public/assets/works/food-ordering/IMG_1.png";
+import ordering2 from "@/src/public/assets/works/food-ordering/IMG_2.png";
 
 export const ordering = {
   title: "Food Ordering Site (mock)",
@@ -129,12 +129,12 @@ export const ordering = {
   },
 };
 
-import myBlog1 from "@/public/assets/works/blog/IMG_1.png";
-import myBlog2 from "@/public/assets/works/blog/IMG_2.png";
-import myBlog3 from "@/public/assets/works/blog/IMG_3.png";
-import myBlog4 from "@/public/assets/works/blog/IMG_4.png";
-import myBlog5 from "@/public/assets/works/blog/IMG_5.png";
-import myBlog6 from "@/public/assets/works/blog/IMG_6.png";
+import myBlog1 from "@/src/public/assets/works/blog/IMG_1.png";
+import myBlog2 from "@/src/public/assets/works/blog/IMG_2.png";
+import myBlog3 from "@/src/public/assets/works/blog/IMG_3.png";
+import myBlog4 from "@/src/public/assets/works/blog/IMG_4.png";
+import myBlog5 from "@/src/public/assets/works/blog/IMG_5.png";
+import myBlog6 from "@/src/public/assets/works/blog/IMG_6.png";
 
 export const myBlog = {
   title: "My Blog",

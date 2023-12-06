@@ -5,11 +5,11 @@ import Image from "next/image";
 
 import styles from "./works.module.css";
 
-import Card from "@/components/UI/Card";
-import worksData from "@/data/worksData";
+import Card from "@/src/components/UI/Card";
+import worksData from "@/src/data/works-data";
 
-import { dinivideographerportfolio } from "@/data/worksData";
-import Button from "@/components/UI/Button";
+import { dinivideographerportfolio } from "@/src/data/works-data";
+import Button from "@/src/components/UI/Button";
 
 function Works() {
   const router = useRouter();

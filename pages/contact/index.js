@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Card from '@/components/UI/Card'
-import ContactForm from '@/components/Contact/ContactForm'
+import Card from '@/src/components/UI/Card'
+import ContactForm from '@/src/components/Contact/ContactForm'
 
 function contact() {
   return (

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import styles from "./index.module.css";
 
-import Profile from "@/components/Profile/Profile";
+import Profile from "@/src/components/Profile/Profile";
 
 function HomePage() {
   

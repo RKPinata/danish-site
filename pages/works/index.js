@@ -3,8 +3,8 @@ import styles from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-import Button from "@/components/UI/Button";
-import Card from "@/components/UI/Card";
+import Button from "@/src/components/UI/Button";
+import Card from "@/src/components/UI/Card";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

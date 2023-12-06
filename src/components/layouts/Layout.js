@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Menu from "@/components/Menu/Menu";
+import Menu from "@/src/components/Menu/Menu";
 import Footer from "../Footer";
 
 import { skModernist } from "@/src/public/fonts/font-provider";

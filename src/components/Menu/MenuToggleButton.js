@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import styles from "./MenuToggleButton.module.css";
 
-import { wildWorld } from "@/src/public/fonts/font-provider";
+import { wildWorld } from "@/public/fonts/font-provider";
 
 function MenuToggleButton(props) {
   const router = useRouter();

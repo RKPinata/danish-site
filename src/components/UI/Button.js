@@ -1,6 +1,6 @@
 import styles from "./Button.module.css";
 
-import { wildWorld } from "@/src/public/fonts/font-provider";
+import { wildWorld } from "@/public/fonts/font-provider";
 
 import {
   faChevronLeft,

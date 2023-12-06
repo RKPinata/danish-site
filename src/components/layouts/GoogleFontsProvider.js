@@ -1,4 +1,4 @@
-import { spaceGrotesk } from "@/src/public/fonts/font-provider";
+import { spaceGrotesk } from "@/public/fonts/font-provider";
 
 function GoogleFontsLayout({ children }) {
   return (

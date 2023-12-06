@@ -7,6 +7,10 @@
 
 # package manager
 package-lock.json
+bun.lockb
+pnpm-lock.yaml
+yarn.lock
+
 
 # testing
 /coverage

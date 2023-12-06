@@ -1,26 +1,16 @@
 import "@/src/styles/globals.css";
-import NavLayout from "@/components/layouts/nav";
-
-import { Space_Grotesk } from '@next/font/google'
-import localFont from '@next/font/local'
-
-const spaceGrotesk = Space_Grotesk({
-  subsets:['latin'],
-  weight:['300','400','500','600','700']
-})
-const skModernist = localFont({src:'../src/fonts/sk-modernist.otf'})
-
+import Layout from "@/components/layouts/Layout";
+import GoogleFontsProvider from "@/components/layouts/GoogleFontsProvider";
 
 
 function MyApp({ Component, pageProps }) {
-
   return (
-    <NavLayout spaceGrotesk={spaceGrotesk} skModernist={skModernist}>
-      <Component {...pageProps} />
-    </NavLayout>
+    <GoogleFontsProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </GoogleFontsProvider>
   );
 }
 
-
 export default MyApp;
-

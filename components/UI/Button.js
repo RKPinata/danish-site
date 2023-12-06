@@ -2,8 +2,7 @@ import React from 'react'
 
 import styles from './Button.module.css'
 
-import localFont from "@next/font/local";
-const wildWorld = localFont({ src: "../../src/fonts/wild-world.otf" });
+import { wildWorld } from '@/src/fonts/font-provider'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'

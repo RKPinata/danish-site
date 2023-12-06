@@ -6,18 +6,10 @@ import styles from "./Profile.module.css";
 
 import myPic from "@/public/danish-img.webp";
 
-import { Space_Grotesk } from "@next/font/google";
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-import localFont from "@next/font/local";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
-const wildWorld = localFont({ src: "../../src/fonts/wild-world.otf" });
 
-
+import { wildWorld } from "@/src/fonts/font-provider";
 
 function Profile() {
   return (
@@ -47,15 +39,18 @@ function Profile() {
           <h3>About Me</h3>
           <p className={styles["profile-paragraph"]}>
             I&apos;m a Frontend Developer who is enthusiastic about creating
-            engaging web experiences that combine aesthetics with functionality. I&apos;m familiar with the different stages in Web Development: planning,
-            prototyping, design and development. With excellent problem-solving
-            skills and attention to detail, I&apos;m committed to creating
-            intuitive and visually appealing interfaces that enhance user
-            engagement.
+            engaging web experiences that combine aesthetics with functionality.
+            I&apos;m familiar with the different stages in Web Development:
+            planning, prototyping, design and development. With excellent
+            problem-solving skills and attention to detail, I&apos;m committed
+            to creating intuitive and visually appealing interfaces that enhance
+            user engagement.
           </p>
         </section>
         <section>
-          <Link href="/works" className={styles['profile-button']}><Button label='View My Work'/></Link>
+          <Link href="/works" className={styles["profile-button"]}>
+            <Button label="View My Work" />
+          </Link>
         </section>
         <section>
           <h3>Experiences</h3>
@@ -69,9 +64,10 @@ function Profile() {
                 involved implementing call functionality and designing
                 enhancements to improve the overall video call experience.
                 Furthermore, I collaborated closely with mobile engineering team
-                to develop the Pet Mall app using React Native. This comprehensive
-                application serves as a one-stop solution for pet owners,
-                enhancing their experience in fulfilling their pets&apos; needs.
+                to develop the Pet Mall app using React Native. This
+                comprehensive application serves as a one-stop solution for pet
+                owners, enhancing their experience in fulfilling their
+                pets&apos; needs.
               </p>
             </div>
           </div>
@@ -80,11 +76,11 @@ function Profile() {
             <div>
               <h4>Web Developer Freelancer</h4>
               <p className={styles["profile-paragraph"]}>
-                As a freelance web developer specializing in React.js and Next.js,
-                I provide creative and interactive solutions that deliver
-                exceptional user experiences. From crafting responsive layouts to
-                implementing complex functionalities, I am dedicated to bringing
-                my clients&apos; visions to life.
+                As a freelance web developer specializing in React.js and
+                Next.js, I provide creative and interactive solutions that
+                deliver exceptional user experiences. From crafting responsive
+                layouts to implementing complex functionalities, I am dedicated
+                to bringing my clients&apos; visions to life.
               </p>
             </div>
           </div>
@@ -96,11 +92,11 @@ function Profile() {
                 I am responsible for maintaining, updating, and managing a
                 WordPress website. This includes tasks such as regularly
                 monitoring the website for any issues, identifying and fixing
-                problems that arise, such as broken links, typography errors, and
-                broken layouts. Additionally, I ensure that the website is kept up
-                to date with the latest software versions and security patches. By
-                actively managing and troubleshooting the website, I help ensure
-                its smooth functioning and optimal user experience.
+                problems that arise, such as broken links, typography errors,
+                and broken layouts. Additionally, I ensure that the website is
+                kept up to date with the latest software versions and security
+                patches. By actively managing and troubleshooting the website, I
+                help ensure its smooth functioning and optimal user experience.
               </p>
             </div>
           </div>
@@ -110,8 +106,8 @@ function Profile() {
               <h4>Frontend developer Intern</h4>
               <p className={styles["profile-paragraph"]}>
                 I designed, developed, and deployed the front-end components of
-                the UNS Telemedicine Web App. The app is hosted on the university
-                server.
+                the UNS Telemedicine Web App. The app is hosted on the
+                university server.
               </p>
             </div>
           </div>
@@ -136,7 +132,6 @@ function Profile() {
         </section>
       </Card>
     </>
-    
   );
 }
 

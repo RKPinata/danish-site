@@ -2,7 +2,9 @@ import Head from "next/head";
 import Menu from "@/components/Menu/Menu";
 import Footer from "../Footer";
 
-const Layout = ({ skModernist, spaceGrotesk, children, router }) => {
+import { skModernist } from "@/src/fonts/font-provider";
+
+const Layout = ({ children, router }) => {
   return (
     <>
       <Head>
@@ -11,7 +13,7 @@ const Layout = ({ skModernist, spaceGrotesk, children, router }) => {
       </Head>
       <Menu />
       <main className={skModernist.className}>{children}</main>
-      <Footer spaceGrotesk={spaceGrotesk}/>
+      <Footer/>
     </>
   );
 };

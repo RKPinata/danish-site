@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Button.module.css'
 
-import { wildWorld } from '@/src/fonts/font-provider'
+import { wildWorld } from '@/src/public/fonts/font-provider'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'

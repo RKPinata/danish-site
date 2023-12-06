@@ -9,7 +9,7 @@ import myPic from "@/src/public/danish-img.webp";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 
-import { wildWorld } from "@/src/fonts/font-provider";
+import { wildWorld } from "@/src/public/fonts/font-provider";
 
 function Profile() {
   return (

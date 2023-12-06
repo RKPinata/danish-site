@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import styles from "./MenuToggleButton.module.css";
 import { useRouter } from "next/router";
 
-import { wildWorld } from "@/src/fonts/font-provider";
+import { wildWorld } from "@/src/public/fonts/font-provider";
 
 function MenuToggleButton(props) {
   const router = useRouter();
